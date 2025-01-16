@@ -4425,6 +4425,7 @@ GameObject:
   - component: {fileID: 378905780}
   - component: {fileID: 378905779}
   - component: {fileID: 378905778}
+  - component: {fileID: 378905782}
   m_Layer: 0
   m_Name: ISDK_HandGrabInteraction
   m_TagString: Untagged
@@ -4469,16 +4470,16 @@ MonoBehaviour:
   _whenSelect:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1028915160}
-        m_TargetAssemblyTypeName: UnityEngine.Transform, UnityEngine
-        m_MethodName: set_parent
-        m_Mode: 2
+      - m_Target: {fileID: 378905782}
+        m_TargetAssemblyTypeName: UnityEngine.Component, UnityEngine
+        m_MethodName: SendMessage
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: MoveForward
           m_BoolArgument: 0
         m_CallState: 2
   _whenUnselect:
@@ -4582,6 +4583,18 @@ MonoBehaviour:
   _rigidbody: {fileID: 1028915156}
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
+--- !u!114 &378905782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 378905776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea88ebcc24aaa3e408f3b2416010f749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &379864947
 GameObject:
   m_ObjectHideFlags: 0
@@ -10972,12 +10985,12 @@ Transform:
   m_GameObject: {fileID: 1028915155}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 2.24}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0.73, z: 0.68}
+  m_LocalScale: {x: 1, y: 1, z: 1.0844474}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 378905777}
-  m_Father: {fileID: 2041210611}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1029682235
 GameObject:
@@ -19848,7 +19861,6 @@ Transform:
   m_Children:
   - {fileID: 392208485}
   - {fileID: 438681915}
-  - {fileID: 1028915160}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2044189623
@@ -20899,4 +20911,5 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 869376661}
+  - {fileID: 1028915160}
   - {fileID: 2041210611}
