@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SliceObject : MonoBehaviour
+public class slicer : MonoBehaviour
 {
     float timer = 1;
 
@@ -43,13 +43,10 @@ public class SliceObject : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        print("Collision");
         if (timer <= 0)
         {
-            print("Timer <= 0");
-            if (other.gameObject.CompareTag("Slicable"))
+            if (other.gameObject.tag == "Slicable")
             {
-                print("Slicable  " + other.gameObject.name);
                 timer += 1;
                 slice(other);
             }
@@ -58,7 +55,8 @@ public class SliceObject : MonoBehaviour
 
     void slice(Collision other)
     {
-        print("Slice " + other.gameObject.name);
+
+        print("entrei");
         Collider coll = GetComponent<Collider>();
 
         // Create cutting plane

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44202876, g: 0.45022064, b: 0.47379425, a: 1}
+  m_IndirectSpecularColor: {r: 0.44207624, g: 0.45026767, b: 0.47382608, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -366,17 +366,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cleaver
       objectReference: {fileID: 0}
+    - target: {fileID: 3508318568676637030, guid: cccd3d0bc5e44f04aafe4cefec220858, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3508318568676637030, guid: cccd3d0bc5e44f04aafe4cefec220858, type: 3}
+      propertyPath: m_IncludeLayers.m_Bits
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6099369938493141222, guid: cccd3d0bc5e44f04aafe4cefec220858, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.000000030375162
+      value: 0.000000030375165
       objectReference: {fileID: 0}
     - target: {fileID: 6099369938493141222, guid: cccd3d0bc5e44f04aafe4cefec220858, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.000000042028347
+      value: 0.00000004202835
       objectReference: {fileID: 0}
     - target: {fileID: 6099369938493141222, guid: cccd3d0bc5e44f04aafe4cefec220858, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00000003502899
+      value: -0.000000035028993
       objectReference: {fileID: 0}
     - target: {fileID: 6099369938493141222, guid: cccd3d0bc5e44f04aafe4cefec220858, type: 3}
       propertyPath: m_LocalRotation.x
@@ -390,13 +398,17 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.000000029802315
       objectReference: {fileID: 0}
+    - target: {fileID: 7262504304816268871, guid: cccd3d0bc5e44f04aafe4cefec220858, type: 3}
+      propertyPath: m_Name
+      value: CleaverVisuals
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2603761585398080886, guid: cccd3d0bc5e44f04aafe4cefec220858, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 7262504304816268871, guid: cccd3d0bc5e44f04aafe4cefec220858, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1801297294}
+      addedObject: {fileID: 1893524005}
   m_SourcePrefab: {fileID: 100100000, guid: cccd3d0bc5e44f04aafe4cefec220858, type: 3}
 --- !u!1001 &333668707
 PrefabInstance:
@@ -1654,36 +1666,15 @@ GameObject:
   - component: {fileID: 1457765295}
   - component: {fileID: 1457765294}
   - component: {fileID: 1457765293}
-  - component: {fileID: 1457765292}
-  - component: {fileID: 1457765296}
+  - component: {fileID: 1457765297}
+  - component: {fileID: 1457765298}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: Cube
   m_TagString: Slicable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!135 &1457765292
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1457765291}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1457765293
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1743,13 +1734,34 @@ Transform:
   m_GameObject: {fileID: 1457765291}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.20754486, y: 0.84, z: 0.19}
+  m_LocalPosition: {x: 0.20754486, y: 0.8539, z: 0.2745}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!54 &1457765296
+--- !u!65 &1457765297
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1457765291}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1457765298
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1775,7 +1787,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!4 &1708308078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4574527821592105548, guid: af3467ecf1a7ab8428e0ef8e746be06a, type: 3}
@@ -1813,18 +1825,18 @@ Transform:
   - {fileID: 147816423}
   m_Father: {fileID: 7079690333416376773}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1801297288 stripped
+--- !u!1 &1893523999 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2603761585398080886, guid: cccd3d0bc5e44f04aafe4cefec220858, type: 3}
+  m_CorrespondingSourceObject: {fileID: 7262504304816268871, guid: cccd3d0bc5e44f04aafe4cefec220858, type: 3}
   m_PrefabInstance: {fileID: 252767827}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1801297294
+--- !u!114 &1893524005
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801297288}
+  m_GameObject: {fileID: 1893523999}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2fc633fdaf788ea419940ad4f69a82d2, type: 3}
@@ -5721,7 +5733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_LocalPosition.z
