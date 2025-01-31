@@ -1,3 +1,4 @@
+using Oculus.Interaction;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +6,7 @@ using UnityEngine;
 public class slicer : MonoBehaviour
 {
     float timer = 1;
+    [SerializeField] GameObject interactable;
 
     struct Triangle
     {
@@ -250,6 +252,9 @@ public class slicer : MonoBehaviour
         {
             // Creates new meshes
             Material mat = other.gameObject.GetComponent<MeshRenderer>().material;
+
+            //Grabbable grabbable = other.gameObject.GetComponent<Grabbable>();
+
             Destroy(other.gameObject);
 
             Mesh mesh1 = new Mesh();
@@ -308,6 +313,14 @@ public class slicer : MonoBehaviour
             mc1.sharedMesh = mesh1;
             go1.tag = "Slicable";
 
+            /*
+            GameObject inter1 = Instantiate(interactable);
+            inter1.transform.SetParent(go1.transform);
+            GrabInteractable grabInteractable = this.interactable.GetComponent<GrabInteractable>();
+            Destroy(grabInteractable.GetComponent<Rigidbody>());
+            grabInteractable.
+            */
+
             MeshFilter mf2 = go2.AddComponent<MeshFilter>();
             mf2.mesh = mesh2;
             MeshRenderer mr2 = go2.AddComponent<MeshRenderer>();
@@ -316,6 +329,9 @@ public class slicer : MonoBehaviour
             //if (mf2.mesh.vertexCount <= 255) {
             mc2.convex = true;
             go2.AddComponent<Rigidbody>();
+
+            //GameObject inter2 = Instantiate(interactable);
+            //inter2.transform.SetParent(go2.transform);
             //}
             mc2.sharedMesh = mesh2;
             go2.tag = "Slicable";

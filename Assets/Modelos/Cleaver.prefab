@@ -737,10 +737,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1058420058662183575}
-  - component: {fileID: 3817584909838636163}
   - component: {fileID: 5653526671735553614}
   - component: {fileID: 445822140039383637}
   - component: {fileID: 3961185998366564658}
+  - component: {fileID: 1415330059188775364}
   m_Layer: 0
   m_Name: Cleaver
   m_TagString: Untagged
@@ -756,7 +756,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2603761585398080886}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.04633954, y: 0.7494343, z: -0.43461788, w: -0.49730104}
+  m_LocalRotation: {x: 0.0463396, y: -0.7494325, z: 0.4346211, w: 0.4973008}
   m_LocalPosition: {x: -0.01447834, y: 0.9214798, z: 0.10482243}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -764,34 +764,7 @@ Transform:
   - {fileID: 1292715964972150575}
   - {fileID: 313417714908971550}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
---- !u!54 &3817584909838636163
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2603761585398080886}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_LocalEulerAnglesHint: {x: 44.229, y: -100.257, z: 30.42}
 --- !u!114 &5653526671735553614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,6 +861,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26cb0a0cb13965347b765a3a9356dd69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &1415330059188775364
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2603761585398080886}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &2674115280064127174
 GameObject:
   m_ObjectHideFlags: 0
@@ -1292,7 +1292,7 @@ MonoBehaviour:
   _maxSelectingInteractors: -1
   _data: {fileID: 8891694384230540854}
   _pointableElement: {fileID: 5653526671735553614}
-  _rigidbody: {fileID: 3817584909838636163}
+  _rigidbody: {fileID: 0}
   _physicsGrabbable: {fileID: 0}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
@@ -1639,7 +1639,7 @@ MonoBehaviour:
     - {x: -0.09111304, y: 0.00407137, z: 0.02812923, w: -0.9954349}
     - {x: 0.03761665, y: -0.04293772, z: -0.01328605, w: -0.9982809}
     - {x: -0.0006447434, y: 0.04917067, z: -0.02401883, w: -0.9985014}
-  _ghostProvider: {fileID: 0}
+  _ghostProvider: {fileID: 11400000, guid: ba24f6f783d84ef4f8ff075364e1283c, type: 2}
   _handGhostProvider: {fileID: 0}
   _ovrOffsetMode: 0
 --- !u!1 &4878013074915084834
@@ -2143,8 +2143,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6904045647782497252}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.00000009685753, y: 0.0000000074505797, z: 0.000000014901159, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0.0000000074505797, y: 0.000000029802319, z: 0.000000029802319, w: 1}
+  m_LocalPosition: {x: -0.000000012987492, y: -0.000000006576567, z: -0.0000000062532792}
   m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2463,9 +2463,9 @@ GameObject:
   - component: {fileID: 7950434971388182120}
   - component: {fileID: 6899402392816907089}
   - component: {fileID: 3508318568676637030}
-  - component: {fileID: 6859835249676298524}
+  - component: {fileID: 1921317653473317859}
   m_Layer: 0
-  m_Name: simpleGrabCupMesh
+  m_Name: CleaverVisuals
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2546,28 +2546,7 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Size: {x: 0.08204933, y: 0.082049355, z: 0.082049355}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!64 &6859835249676298524
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7262504304816268871}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -2575,10 +2554,21 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 1
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 917080962878595404, guid: d65274f047688f14d89c030c4c0449dd, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.08204933, y: 0.17, z: 0.01}
+  m_Center: {x: -0.03, y: 0.13, z: 0}
+--- !u!114 &1921317653473317859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7262504304816268871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fc633fdaf788ea419940ad4f69a82d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7485576503831190690
 GameObject:
   m_ObjectHideFlags: 0
