@@ -7,6 +7,8 @@ public class slicer : MonoBehaviour
 {
     float timer = 1;
     [SerializeField] GameObject interactable;
+    [SerializeField] GameObject resetObject;
+    [SerializeField] private ResetGameManager restart;
 
     struct Triangle
     {
@@ -49,6 +51,14 @@ public class slicer : MonoBehaviour
         {
             if (other.gameObject.tag == "Slicable")
             {
+                if (other.gameObject == resetObject)
+                {
+                    restart.ResetGame();
+                }
+                else
+                {
+                    Debug.Log("Reset Game Manager is not this");
+                }
                 timer += 1;
                 slice(other);
             }
