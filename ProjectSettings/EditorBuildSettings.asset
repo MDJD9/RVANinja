@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/JogoCorte 1.unity
+    path: Assets/Scenes/JogoCorte 4.unity
     guid: 2723dd21de63160439ad60ad9cfdb94d
   - enabled: 1
     path: Assets/Scenes/TemporaryScene.unity
