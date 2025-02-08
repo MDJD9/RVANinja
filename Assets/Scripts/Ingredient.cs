@@ -7,7 +7,8 @@ public class Ingredient : MonoBehaviour
     public enum IngredientType
     {
         Vegetable,
-        Fruit
+        Fruit,
+        Doll
     }
 
     public IngredientType ingredientType;

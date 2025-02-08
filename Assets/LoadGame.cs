@@ -9,7 +9,7 @@ public class LoadGame : MonoBehaviour
     void Start()
     {
         new WaitForSecondsRealtime(2.0f);
-     SceneManager.LoadScene("JogoCorte 1", LoadSceneMode.Single);   
+     SceneManager.LoadScene("JogoCorte2", LoadSceneMode.Single);   
     }
 
     // Update is called once per frame

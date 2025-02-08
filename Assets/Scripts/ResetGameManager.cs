@@ -34,7 +34,7 @@ public class ResetGameManager : MonoBehaviour
         SceneManager.SetActiveScene(SceneManager.GetSceneByName("TemporaryScene"));
 
         // Unload the game scene
-        yield return StartCoroutine(UnloadScene("JogoCorte 1"));
+        yield return StartCoroutine(UnloadScene("JogoCorte2"));
 
         // Wait for a moment
     }
