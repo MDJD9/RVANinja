@@ -252,7 +252,7 @@ public class slicer : MonoBehaviour
         {
             // Creates new meshes
             Material mat = other.gameObject.GetComponent<MeshRenderer>().material;
-            Ingridient.IngridientType ogIngridientType = other.gameObject.GetComponent<Ingridient>().ingridientType;
+            Ingredient.IngredientType ogIngridientType = other.gameObject.GetComponent<Ingredient>().ingredientType;
 
             //Grabbable grabbable = other.gameObject.GetComponent<Grabbable>();
 
@@ -310,8 +310,8 @@ public class slicer : MonoBehaviour
             //if (mf1.mesh.vertexCount <= 255) {
             mc1.convex = true;
             go1.AddComponent<Rigidbody>();
-            go1.AddComponent<Ingridient>();
-            go1.GetComponent<Ingridient>().ingridientType = ogIngridientType;
+            go1.AddComponent<Ingredient>();
+            go1.GetComponent<Ingredient>().ingredientType = ogIngridientType;
             //}
             mc1.sharedMesh = mesh1;
             go1.tag = "Slicable";
@@ -332,8 +332,8 @@ public class slicer : MonoBehaviour
             //if (mf2.mesh.vertexCount <= 255) {
             mc2.convex = true;
             go2.AddComponent<Rigidbody>();
-            go2.AddComponent<Ingridient>();
-            go2.GetComponent<Ingridient>().ingridientType = ogIngridientType;
+            go2.AddComponent<Ingredient>();
+            go2.GetComponent<Ingredient>().ingredientType = ogIngridientType;
 
             //GameObject inter2 = Instantiate(interactable);
             //inter2.transform.SetParent(go2.transform);
