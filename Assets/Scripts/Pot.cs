@@ -14,11 +14,11 @@ public class Pot : MonoBehaviour
         {
             if (ingridient.ingridientType == 0)
             {
-                gameManager.AddScore(vegetablePoints);
+                gameManager.AddScore(vegetablePoints, transform.position);
             }
             else
             {
-                gameManager.AddScore(fruitPoints);
+                gameManager.AddScore(fruitPoints, transform.position);
             }
         }
     }

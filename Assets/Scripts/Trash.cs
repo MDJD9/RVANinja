@@ -15,11 +15,11 @@ public class Trash : MonoBehaviour
 
             if ((int)ingridient.ingridientType == 1)
             {
-                gameManager.AddScore(fruitPoints);
+                gameManager.AddScore(fruitPoints, transform.position);
             }
             else
             {
-                gameManager.AddScore(vegetablePoints);
+                gameManager.AddScore(vegetablePoints, transform.position);
             }
         }
     }
