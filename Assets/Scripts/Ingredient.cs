@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ingridient : MonoBehaviour
+public class Ingredient : MonoBehaviour
 {
-    public enum IngridientType
+    public enum IngredientType
     {
         Vegetable,
         Fruit
     }
 
-    public IngridientType ingridientType;
+    public IngredientType ingredientType;
 }
