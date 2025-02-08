@@ -10,9 +10,9 @@ public class Pot : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out Ingridient ingridient))
+        if (other.TryGetComponent(out Ingredient ingridient))
         {
-            if (ingridient.ingridientType == 0)
+            if (ingridient.ingredientType == 0)
             {
                 gameManager.AddScore(vegetablePoints, transform.position);
             }

@@ -10,10 +10,10 @@ public class Trash : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent(out Ingridient ingridient))
+        if (other.TryGetComponent(out Ingredient ingridient))
         {
 
-            if ((int)ingridient.ingridientType == 1)
+            if ((int)ingridient.ingredientType == 1)
             {
                 gameManager.AddScore(fruitPoints, transform.position);
             }

@@ -262,4 +262,4 @@ MonoBehaviour:
   lifetime: 1.5
   minDist: 0.5
   maxDist: 1
-  offset: {x: 0, y: 0.2, z: 0}
+  offset: {x: 0.8, y: 0, z: 0.4}
