@@ -12,7 +12,8 @@ public class Spatula : MonoBehaviour
         {
             Debug.Log("Spatula Colidiu");
             Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
-            rb.AddForce(Vector3.forward * projectingForce, ForceMode.Impulse);
+            rb.AddForce(Vector3.right * projectingForce, ForceMode.Impulse);
+            rb.AddForce(Vector3.right * projectingForce, ForceMode.Impulse);
         }
     }
 }
